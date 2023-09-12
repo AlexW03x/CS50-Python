@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1>Quoted:</h1>
+    <h2>Name: {{name}}</h2>
+    <h2>Asset: {{symbol}} </h2>
+    <h2>Price: {{price | usd}}</h2>
+</div>
+{% endblock %}
